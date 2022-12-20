@@ -10,6 +10,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
+        //import reactive 안되게 조심.
         MustacheViewResolver resolver = new MustacheViewResolver();
         resolver.setCharset("UTF-8");
         resolver.setContentType("text/html; charset=UTF-8");
